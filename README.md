@@ -1,25 +1,52 @@
-# Valentine's Force Invite ❤️
+# Will You Be My Valentine? ❤️
 
-A playful, interactive "Valentine's Trap" web app where saying "No" is simply not an option. Designed to be cheeky, persistent, and ultimately successful.
+A playful, interactive Valentine’s web page where saying “No” just makes the “Yes” button grow. Includes English/Tamil language toggle and a celebratory heart animation.
 
 ## 🔗 Live Demo
+
 **[Check it out here!](https://mu-ki.github.io/Will-you-be-my-valentine/)**
 
 ## ✨ Features
-* **Multilingual Support:** Fully translated into **English**, **Hebrew**, and **Arabic**.
-* **RTL Support:** Native Right-to-Left layout for Hebrew and Arabic speakers.
-* **Persistent Logic:** The "No" button triggers increasingly desperate pleas, while the "Yes" button grows until it dominates the screen.
-* **Visual Polish:** Features smooth CSS animations, a pulsing "Yes" button, and a celebratory heart explosion upon success.
+
+* **Bilingual Support:** English and Tamil language toggle.
+* **Persistent Logic:** The "No" button cycles playful prompts, while the "Yes" button grows.
+* **Animated Feedback:** Banner changes on "No"/"Yes" and hearts rain on success.
+* **Personalized Prompt:** The question and success text are customized for Dhivya.
 
 ## 🚀 How it Works
-1.  The user is asked to be your Valentine.
-2.  If they click "No", the button text changes and the "Yes" button grows larger.
-3.  Once they (inevitably) click "Yes", the buttons disappear, the banner changes, and hearts fill the screen.
+
+1. The page asks to be your Valentine.
+2. Clicking "No" changes the button text and grows the "Yes" button.
+3. Clicking "Yes" switches the banner and triggers heart animations.
 
 ## 🛠️ Tech Stack
+
 * **HTML5**
 * **CSS3** (Custom animations & gradients)
 * **Vanilla JavaScript** (No heavy libraries needed)
 
+## 📂 Project Structure
+
+```
+.
+├── index.html
+├── public
+│   ├── css
+│   │   └── style.css
+│   ├── images
+│   │   ├── mid.gif
+│   │   ├── no.gif
+│   │   └── yes.gif
+│   └── js
+│       └── script.js
+└── README.md
+```
+
+## 🔧 Customize
+
+* Update the name and messages in `index.html` and `public/js/script.js`.
+* Replace the GIFs in `public/images/` for a different vibe.
+
 ---
+
 **Creator:** [mu-ki](https://github.com/mu-ki) 😉
