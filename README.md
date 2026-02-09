@@ -3,7 +3,7 @@
 A playful, interactive "Valentine's Trap" web app where saying "No" is simply not an option. Designed to be cheeky, persistent, and ultimately successful.
 
 ## 🔗 Live Demo
-**[Check it out here!](https://jabbourdan.github.io/valantine_force_invite/)**
+**[Check it out here!](https://mu-ki.github.io/Will-you-be-my-valentine/)**
 
 ## ✨ Features
 * **Multilingual Support:** Fully translated into **English**, **Hebrew**, and **Arabic**.
