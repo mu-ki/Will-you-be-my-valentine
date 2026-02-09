@@ -22,4 +22,4 @@ A playful, interactive "Valentine's Trap" web app where saying "No" is simply no
 * **Vanilla JavaScript** (No heavy libraries needed)
 
 ---
-**Creator:** [Jabbour Dandan](https://github.com/jabbourdan) 😉
+**Creator:** [mu-ki](https://github.com/mu-ki) 😉
