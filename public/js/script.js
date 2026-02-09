@@ -43,9 +43,10 @@ no_button.addEventListener('click', () => {
     size += sizes[random];
     
     yes_button.style.height = `${size}px`;
-    yes_button.style.minWidth = `${size}px`;
+    // yes_button.style.minWidth = `${size}px`;
+    yes_button.style.maxWidth = `${100}%`;
     yes_button.style.width = 'auto';
-    yes_button.style.padding = `${(size/50) * 10}px ${(size/50) * 20}px`;
+    // yes_button.style.padding = `${(size/50) * 10}px ${(size/50) * 20}px`;
     yes_button.style.fontSize = `${(size/50) * 18}px`; // Scale font with button
 
     let total = answers_no[language].length;
