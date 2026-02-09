@@ -28,6 +28,13 @@ const yes_button = document.getElementById('yes-button');
 let i = 1;
 let size = 50;
 let clicks = 0;
+let slideshowIntervalId = null;
+const slideshowImages = [
+    "public/images/pics/1.jpg",
+    "public/images/pics/2.jpg",
+    "public/images/pics/3.jpg",
+    "public/images/pics/4.jpg"
+];
 
 no_button.addEventListener('click', () => {
     let banner = document.getElementById('banner');
@@ -70,11 +77,12 @@ no_button.addEventListener('click', () => {
 
 yes_button.addEventListener('click', () => {
     let banner = document.getElementById('banner');
-    banner.src = "public/images/yes.gif";
-    refreshBanner();
+    const questionHeading = document.getElementById("question-heading");
+    startSlideshow(banner);
 
     document.getElementsByClassName('buttons')[0].style.display = "none";
     document.getElementsByClassName('message')[0].style.display = "block";
+    questionHeading.style.display = "none";
     
     createHearts();
 });
@@ -117,4 +125,20 @@ function createHearts() {
         container.appendChild(heart);
         setTimeout(() => heart.remove(), 5000);
     }
+}
+
+function startSlideshow(banner) {
+    let index = 0;
+
+    if (slideshowIntervalId) {
+        clearInterval(slideshowIntervalId);
+        slideshowIntervalId = null;
+    }
+
+    banner.src = slideshowImages[index];
+
+    slideshowIntervalId = setInterval(() => {
+        index = (index + 1) % slideshowImages.length;
+        banner.src = slideshowImages[index];
+    }, 3000);
 }
